@@ -1,0 +1,18 @@
+  
+python3 freeze_graph.py
+  --input_graph="/home/mengxi/Desktop/projectvechiledetection/ssd_mobilenet_v1_coco_2017_11_17/frozen_inference_graph.pb" \
+  --input_binary=True
+  --input_checkpoint="/home/mengxi/Desktop/projectvechiledetection/ckpt/mode.ckpt-46860" \
+  --input_binary=true 
+  --output_graph=/tmp/frozen_mobilenet_46860.pb \
+  --output_node_names=output
+
+
+
+python3 /usr/local/lib/python3.5/dist-packages/tensorflow/python/tools/freeze_graph.py   --input_graph=/tmp/inception_v4_inf_graph.pb  --input_binary=True  --datasetname=pj_vehicle --input_checkpoint=/home/mengxi/Desktop/projectvechiledetection/ckpt/model.ckpt-46860   --output_graph=/home/mengxi/Desktop/projectvechiledetection/ckpt/frozen_46860.pb   --output_node_names=output 
+
+
+/home/mengxi/Desktop/projectvechiledetection/ckpt
+
+python3 classify_image.py --model_file=/home/mengxi/Desktop/projectvechiledetection/ckpt/frozen_46860.pb --label_file=labels.txt  --image_file=test.jpg
+

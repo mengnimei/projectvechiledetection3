@@ -1,0 +1,6 @@
+model_checkpoint_path: "/output/ckpt/model.ckpt-46860"
+all_model_checkpoint_paths: "/output/ckpt/model.ckpt-45832"
+all_model_checkpoint_paths: "/output/ckpt/model.ckpt-46102"
+all_model_checkpoint_paths: "/output/ckpt/model.ckpt-46372"
+all_model_checkpoint_paths: "/output/ckpt/model.ckpt-46642"
+all_model_checkpoint_paths: "/output/ckpt/model.ckpt-46860"
